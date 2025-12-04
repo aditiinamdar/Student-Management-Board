@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* --- Search Container --- */
+.search-container {
+    display:flex;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color:black;
+}
+
+/* --- Button Flex-box (Sorting) --- */
+.button-flex-container {
+    display: flex;
+    justify-content: space-between; /* Maximum space between buttons */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.button-flex-container button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.button-flex-container button:hover {
+    background-color: black;
+}
+
+/* --- Table Styling --- */
+#studentTable, .gender-table {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: bold;
+    border-top: 2px solid black;
+     border-left: 1px solid black;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.student-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.passing-status {
+    font-weight: bold;
+}
+
+.passing {
+    color: green;
+}
+
+.failed {
+    color: red;
+}
+
+/* Gender Tables Specific Styling */
+#genderTablesContainer h2 {
+    margin-top: 40px;
+    color: #17a2b8;
+}
